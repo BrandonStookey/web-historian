@@ -30,7 +30,7 @@ exports.handleRequest = function (req, res) {
           });
         } else {
           archive.addUrlToList(url, function() {
-            httpHelpers.sendRedirect(res, '/loading.html');
+            httpHelpers.sendRedirect(response, '/loading.html');
           });
         }
       });
